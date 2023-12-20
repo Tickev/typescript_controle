@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var ParisSportifs_1 = require("./ParisSportifs");
+var pari1 = new ParisSportifs_1.ParisSportif(50, "PSG", "Metz", 1.2, 4.5);
+var pari2 = new ParisSportifs_1.ParisSportif(100, "Nantes", "Toulouse", 2.2, 2.8);
+console.log(pari1.afficherDetailsPari());
+console.log(pari2.afficherDetailsPari());
+pari2.setEquipe1("Moscou");
+console.log(pari2.afficherDetailsPari());
+console.log(pari2.calculerGainPotentiel());
